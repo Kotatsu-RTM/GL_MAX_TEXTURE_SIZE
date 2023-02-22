@@ -16,7 +16,7 @@ dependencies {
 
     implementation("org.lwjgl:lwjgl:3.3.1")
     implementation("org.lwjgl:lwjgl-assimp:3.3.1")
-    implementation("org.lwjgl:lwjgl-glfw3.3.1")
+    implementation("org.lwjgl:lwjgl-glfw:3.3.1")
     implementation("org.lwjgl:lwjgl-openal:3.3.1")
     implementation("org.lwjgl:lwjgl-opengl:3.3.1")
     implementation("org.lwjgl:lwjgl-stb:3.3.1")
