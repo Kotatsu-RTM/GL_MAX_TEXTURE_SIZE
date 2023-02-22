@@ -14,12 +14,12 @@ repositories {
 dependencies {
     api(kotlin("test"))
 
-    implementation("org.lwjgl:lwjgl:3.3.1")
-    implementation("org.lwjgl:lwjgl-assimp:3.3.1")
-    implementation("org.lwjgl:lwjgl-glfw:3.3.1")
-    implementation("org.lwjgl:lwjgl-openal:3.3.1")
-    implementation("org.lwjgl:lwjgl-opengl:3.3.1")
-    implementation("org.lwjgl:lwjgl-stb:3.3.1")
+    api("org.lwjgl:lwjgl:3.3.1")
+    api("org.lwjgl:lwjgl-assimp:3.3.1")
+    api("org.lwjgl:lwjgl-glfw:3.3.1")
+    api("org.lwjgl:lwjgl-openal:3.3.1")
+    api("org.lwjgl:lwjgl-opengl:3.3.1")
+    api("org.lwjgl:lwjgl-stb:3.3.1")
 
     runtimeOnly("org.lwjgl:lwjgl:3.3.1:natives-windows")
     runtimeOnly("org.lwjgl:lwjgl-assimp:3.3.1:natives-windows")
