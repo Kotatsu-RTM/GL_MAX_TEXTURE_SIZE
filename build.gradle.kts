@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "dev.siro256.gl_max_texture_size"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     maven { url = uri("https://repo.siro256.dev/repository/maven-public/") }
