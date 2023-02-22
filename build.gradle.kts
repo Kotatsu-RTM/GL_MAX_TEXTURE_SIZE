@@ -34,6 +34,12 @@ configurations.all {
 }
 
 tasks {
+    jar {
+        mapOf(
+            "Main-Class" to "dev.siro256.gl_max_texture_size.GlMaxTextureSize"
+        ).let { manifest.attributes(it) }
+    }
+
     withType<KotlinCompile> {
         kotlinOptions.apply {
             jvmTarget = "1.8"
