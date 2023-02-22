@@ -34,6 +34,17 @@ configurations.all {
 }
 
 tasks {
+    processResources {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+        from(file("LICENSE")) {
+            rename { "LICENSE_${project.name}" }
+        }
+        from(file("README.md")) {
+            rename { "README_${project.name}.md" }
+        }
+    }
+
     jar {
         mapOf(
             "Main-Class" to "dev.siro256.gl_max_texture_size.GlMaxTextureSize"
