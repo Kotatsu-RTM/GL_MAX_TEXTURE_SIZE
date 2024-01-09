@@ -12,6 +12,7 @@ object GlMaxTextureSize {
         if (!GLFW.glfwInit()) throw RuntimeException("Unable to initialize GLFW")
 
         GLFW.glfwDefaultWindowHints()
+        GLFW.glfwWindowHint(GLFW.GLFW_VISIBLE, GLFW.GLFW_FALSE)
         val window = GLFW.glfwCreateWindow(1, 1, "GL_MAX_TEXTURE_SIZE", 0L, 0L)
 
         GLFW.glfwMakeContextCurrent(window)
