@@ -18,6 +18,11 @@ object GlMaxTextureSize {
         GLFW.glfwMakeContextCurrent(window)
         GL.createCapabilities()
 
-        println(GL32.glGetInteger(GL32.GL_MAX_TEXTURE_SIZE))
+        println("""
+            OpenGL Version: ${GL32.glGetInteger(GL32.GL_MAJOR_VERSION)}.${GL32.glGetInteger(GL32.GL_MINOR_VERSION)}
+            Vendor: ${GL32.glGetString(GL32.GL_VENDOR)}
+            Version: ${GL32.glGetString(GL32.GL_VERSION)}
+            Max texture size: ${GL32.glGetInteger(GL32.GL_MAX_TEXTURE_SIZE)}
+        """.trimIndent())
     }
 }
